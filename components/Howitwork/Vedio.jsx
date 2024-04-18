@@ -1,15 +1,13 @@
 import React from "react";
-import { VedioIcons } from "../common/Icon";
+import Image from 'next/image';
 
 const Vedio = () => {
   return (
     <>
       <div className=" px-[12px] ">
-        <div className=" max-w-[1120px] w-full mx-auto h-[660px] bg-[#D9D9D9] rounded-[20px] my-[32px] ">
-          <div className=" flex justify-center pt-[265px] ">
-            <VedioIcons />
-          </div>
-        </div>
+        
+        <Image className="my-[32px]" src="/img/vedio.png" width={1120} height={660} alt='img' />
+        
         <p className=" max-w-[698px] w-full mx-auto text-[#313131] text-center font-Montserrat text-[14px] font-normal mt-[16px] mb-[32px] ">
           Something here about key community values and the vetting process
           (dont use this terinology) t make sure our community is super open

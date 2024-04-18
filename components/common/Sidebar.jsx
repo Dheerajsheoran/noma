@@ -31,7 +31,7 @@ const Sidebar = (setFrist, first) => {
                     </div>
                     <ArrowIcon1 />
                 </Link>
-                <Link href="/News" className="bg-[#D9E4FC] flex justify-between items-center px-8">
+                <Link href="/Antigua" className="bg-[#D9E4FC] flex justify-between items-center px-8">
                     <div className="text-[16px] leading-normal font-normal font-Montserrat text-[#313131] hover:font-bold py-4  ">
                         News
                     </div>

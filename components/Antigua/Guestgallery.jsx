@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Newslastsection from "./Newslastsection";
 import { Guestcards } from "../common/Helper";
@@ -22,6 +22,11 @@ export default function Guestgallery() {
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
+          centeredSlides={true}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -36,8 +41,8 @@ export default function Guestgallery() {
               spaceBetween: 20,
             },
           }}
-          navigation={true}
-          modules={[Autoplay, Navigation]}
+        
+          modules={[Autoplay]}
           className="mySwiper  max-w-[1120px] w-full mx-auto flex gap-[30px]"
         >
           {Guestcards.map((items, index) => (
